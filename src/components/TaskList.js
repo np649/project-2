@@ -8,7 +8,6 @@ class TaskList extends React.Component {
     const taskIndex = this.props.tasks.findIndex(t => t.id === task.id);
     let taskList = this.props.tasks;
     taskList.splice(taskIndex, 1);
-    console.log(this.props);
     this.props.onUpdateTaskList(taskList);
   }
 
@@ -57,4 +56,3 @@ class TaskList extends React.Component {
 }
 
 export default TaskList;
-
