@@ -36,10 +36,12 @@ class App extends React.Component {
   }
 
   
+
   onUpdateTaskList = (newTaskList) => {
     this.setState({ tasks: newTaskList });
   }
 
+  
   render() {
     return (
       <div className="container">
@@ -49,5 +51,6 @@ class App extends React.Component {
     );
   }
 }
+
 
 export default App;

@@ -35,20 +35,20 @@ class TaskList extends React.Component {
     return (
       <ul className="task-list list-group">
         <div>
-          <h3>Todo</h3>
-          { todoItems }
+        <div className="container">
+            <div className="row">
+              <div className="col" style={{background:'grey'}}><br/><h3>ToDo</h3>
+                { todoItems }</div>
+              <div className="col" style={{background:'lightgrey'}}><br/><h3>In-Progress</h3>
+                { inprogressItems }</div>
+              <div className="col" style={{background:'grey'}}><br/><h3>Review</h3>
+                { reviewItems } </div>
+              <div className="col" style={{background:'lightgrey'}}><br/><h3>Done</h3>
+                { doneItems }</div>
+            </div>
+            <div>
+          </div>
         </div>
-        <div>
-          <h3>In Progress</h3>
-          { inprogressItems }
-        </div>
-        <div>
-          <h3>Review</h3>
-          { reviewItems }
-        </div>
-        <div>
-          <h3>Done</h3>
-          { doneItems }
         </div>
       </ul>
     )
